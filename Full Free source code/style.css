@@ -1,47 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap');
+
 body{
-    background: rgb(29,40,41);
-    background: -moz-linear-gradient(90deg, rgba(29,40,41,1) 0%, rgba(24,30,31,1) 11%, rgba(19,19,20,1) 41%, rgba(19,19,20,1) 58%, rgba(24,30,31,1) 85%, rgba(29,40,41,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(29,40,41,1) 0%, rgba(24,30,31,1) 11%, rgba(19,19,20,1) 41%, rgba(19,19,20,1) 58%, rgba(24,30,31,1) 85%, rgba(29,40,41,1) 100%);
-    background: linear-gradient(90deg, rgba(29,40,41,1) 0%, rgba(24,30,31,1) 11%, rgba(19,19,20,1) 41%, rgba(19,19,20,1) 58%, rgba(24,30,31,1) 85%, rgba(29,40,41,1) 100%);
+background: #1e130c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #52382a, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d2829",endColorstr="#1d2829",GradientType=1);
-    color: white;
+    color: rgb(255, 255, 255);
     padding:3rem;
     position: relative;
+
+    
+
 }
+
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+
 }
+
+
+  
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom:2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(40,51,50);
+    border-radius: 10px;
+    align-items: center;
 }
 
 .logo {
-    font-size: 1.5rem;
+    margin-left: 15px;
+    font-size: 2.5rem;
     font-weight: 300;
     letter-spacing: 2px;
+
+
 }
 
 .contact-btn {
-    padding: 0.5rem 2rem;
-    font-size: 1rem;
-    background-color: rgba(143, 143, 143, 0.2);
-    border: 1px solid rgba(102, 102, 102, 0.5);
-    border-radius: 50px;
-    cursor: pointer;
-    color: white;
-    transition: 0.3s;
+    background-image: linear-gradient(to right, #aeafb6 0%, #0c4924  51%, #1D2B64  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(252, 252, 252);
+
+    border-radius: 10px;
+    display: block;
+
+
 }
 
 .contact-btn:hover {
-    background-color: #76b0ab37;
+    background-position: right center; /* change the direction of the change here */
+    cursor: pointer;
 }
 
 
@@ -87,11 +115,11 @@ main h2 {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: start;
 }
 
 .location p {
-    background-image: linear-gradient(to right, #76b0ab, #ffffff, #842626);
+    background-image: linear-gradient(to right, #4f5af5, #ffffff, #da3f3f);
     color: transparent;
     background-clip: text;
     font-size: 1.5rem;
@@ -252,7 +280,7 @@ main h2 {
 }
 
 .card-text {
-    color: #7b7b7b;
+    color: #ffffff;
     line-height: 1.6;
     margin-top: 2rem;
     margin-bottom: 2rem;
